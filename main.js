@@ -45,12 +45,7 @@ const truncateSpecies = function (dino) {
 
 const makeExtinct = function (dino) {
   const extinctDino = {};
-  if ( dino.species.length > 10){
-    extinctDino.species = dino.species+ '...'
-  } else {
-    extinctDino.species = dino.species;
-  }
-  
+  extinctDino.species = dino.species;
   extinctDino.extinct=true;
   extinctDino.period = dino.period;
   extinctDino.carnivore= dino.carnivore;
@@ -66,3 +61,6 @@ module.exports = {
   truncateSpecies,
   makeExtinct,
 };
+
+
+// console.log(Math)
